@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    width: 1024px;
+    margin: 0 auto;
+    background: lightgrey;
+    margin-bottom: 20px;
+}
+
+header {
+    margin: 2% 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.ad {
+    background: tomato;
+    border: 2px solid red;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(39, 39, 39);
+    padding: 1%;
+}
+
+header nav ul li a {
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 20% auto;
+    gap: 1rem;
+}
+
+aside {
+    background: white;
+    padding: 4%;
+}
+
+aside ul {
+    list-style: none;
+    padding-left: 8%;
+}
+
+.container {
+    background: #a7a7a7;
+    padding: 2%;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    outline: 1px dashed rgb(100, 100, 100);
+    outline-offset: -5px;
+    box-shadow: 5px 5px 0 0 rgb(0, 0, 0);
+}
+
+.container h1 {
+    font-size: 2em;
+    text-align: center;
+    background: #1d1d1d;
+    padding: 1%;
+    color: white;;
+}
+
+.container p {
+    font-size: 1.2em;
+    text-align: justify;
+    padding: 1%;
+}
+
+.container button:hover {
+    box-shadow: 0 0 0 0;
+    position: relative;
+    bottom: -5px;
+    left: 5px;
+}
+
+input {
+    padding: 1%;
+    border: 1px solid rgb(0, 0, 0);
+    outline: 1px dashed rgb(100, 100, 100);
+    outline-offset: -5px;
+    box-shadow: 5px 5px 0 0 rgb(0, 0, 0);
+}
+
+.mt-2 {
+    margin-top: 2%;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        padding: 2%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

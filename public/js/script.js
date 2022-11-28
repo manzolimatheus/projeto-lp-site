@@ -59,7 +59,7 @@ const renderCart = () => {
         <input type="text" placeholder="Digite o cupom" class="disccount-box">
         <button class="container" style="width: fit-content; margin-left: 2%;" onclick="applyDisccount()">Aplicar cupom</button>
         <br><br>
-        <button class="container">Finalizar compra</button>
+        <button class="container" onclick="finishPurchase()">Finalizar compra</button>
         `;
     })
     .join('');

@@ -32,7 +32,7 @@ const renderCart = () => {
             <img src="./public/img/logo.gif" alt="logo" width="200">
             <div>
                 <h3>Bank Agent</h3>
-                <p>R$1200</p>
+                <p>R$1200.00</p>
                 <button class="container" onclick="addToCart()">Adicionar ao carrinho</button>
             </div>
         </div>
@@ -50,7 +50,7 @@ const renderCart = () => {
             <img src="./public/img/logo.gif" alt="logo" width="200">
             <div>
                 <h3>${item.name}</h3>
-                <p>R$ ${item.price}</p>
+                <p>R$ ${item.price.toFixed(2)}</p>
                 <button class="container" style="width: fit-content" onclick="removeItem()">Remover</button>
             </div>
         </div>
@@ -77,7 +77,7 @@ const applyDisccount = () => {
   }
 
   if (coupon == 'AGENT500') {
-    cart[0].price = cart[0].price = 500;
+    cart[0].price = 499.90;
     localStorage.setItem('cart', JSON.stringify(cart));
     alert('Cupom aplicado com sucesso!');
     renderCart();
